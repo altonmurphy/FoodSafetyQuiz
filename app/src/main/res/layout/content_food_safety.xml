@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.foodsafetyquiz.FoodSafetyActivity"
+    tools:showIn="@layout/activity_food_safety">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:text="@string/instructions" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+            android:textColor="#455A64"
+            android:textStyle="bold"
+        android:text="@string/question_one" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupQ1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp">
+        <RadioButton
+            android:id="@+id/q1a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Vegetates purchased from a farmer's market"
+            android:onClick="onRadioButtonClicked"
+            android:textSize="12sp"/>
+        <RadioButton
+            android:id="@+id/q1a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. Quail raised on a local farm"
+            android:textSize="12sp"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/q1a3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Tomatoes grown in a rooftop garden"
+            android:textSize="12sp"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/q1a4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D. Clover sprouts grown onsite"
+            android:textSize="12sp"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textColor="#455A64"
+            android:textStyle="bold"
+            android:text="@string/question_two" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp">
+            <RadioButton
+                android:id="@+id/q2a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. HACCP plan in place."
+                android:onClick="onRadioButtonClicked"
+                android:textSize="12sp"/>
+            <RadioButton
+                android:id="@+id/q2a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. license for the sale of raw shellfish."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q2a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. consumer advisory on the menu."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q2a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. variance approved by the local regulatory authority."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textColor="#455A64"
+            android:textStyle="bold"
+            android:text="@string/question_three" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp">
+            <RadioButton
+                android:id="@+id/q3a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Sprinkler systems may be disabled"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="12sp"/>
+            <RadioButton
+                android:id="@+id/q3a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Beverage dispensers may be damaged by corrosive minerals"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q3a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. Grease traps may become blocked"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q3a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. The drinkable water supply may become contaminated"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textColor="#455A64"
+            android:textStyle="bold"
+            android:text="@string/question_four" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp">
+            <RadioButton
+                android:id="@+id/q4a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. 145°F (63°C)"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="12sp"/>
+            <RadioButton
+                android:id="@+id/q4a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. 155°F (68°C)"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q4a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. 165°F (74°C)"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q4a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. 175°F (79°C)"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#455A64"
+            android:layout_margin="@dimen/text_margin"
+            android:textStyle="bold"
+            android:text="@string/question_five" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp">
+            <RadioButton
+                android:id="@+id/q5a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. 12"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="12sp"/>
+            <RadioButton
+                android:id="@+id/q5a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. 18"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q5a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. 24"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q5a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. 48"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textColor="#455A64"
+            android:textStyle="bold"
+            android:text="@string/question_six" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp">
+            <RadioButton
+                android:id="@+id/q6a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. 32°F (0°C)"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="12sp"/>
+            <RadioButton
+                android:id="@+id/q6a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. 41°F (5°C)"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q6a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. 45°F (7°C)"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q6a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. 55°F (13°C)"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textColor="#455A64"
+            android:textStyle="bold"
+            android:text="@string/question_seven" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp">
+            <RadioButton
+                android:id="@+id/q7a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. 0.6-2.3"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="12sp"/>
+            <RadioButton
+                android:id="@+id/q7a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. 1.0-0.8"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q7a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. 4.6-7.5"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q7a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. 6.6-7.6)"
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textColor="#455A64"
+            android:textStyle="bold"
+            android:text="@string/question_eight" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp">
+            <RadioButton
+                android:id="@+id/q8a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. Before adding breakfast dishes to the menu."
+                android:onClick="onRadioButtonClicked"
+                android:textSize="12sp"/>
+            <RadioButton
+                android:id="@+id/q8a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. Before producing food using reduced oxygen packaging (ROP)."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q8a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. When allowing steaks to be served rare or medium rare."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q8a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. When serving food produced outside of the United States."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textColor="#455A64"
+            android:textStyle="bold"
+            android:text="@string/question_nine" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp">
+            <RadioButton
+                android:id="@+id/q9a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. kept uncovered during the cooking process."
+                android:onClick="onRadioButtonClicked"
+                android:textSize="12sp"/>
+            <RadioButton
+                android:id="@+id/q9a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. stirred midway through the cooking process."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q9a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. cooked for a minimum of 3 minutes."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q9a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. cooked in a disposable container."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textColor="#455A64"
+            android:textStyle="bold"
+            android:text="@string/question_ten" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupQ10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="16dp">
+            <RadioButton
+                android:id="@+id/q10a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. throw it out or reheat it again before cooling it correctly for a total of 6 hours."
+                android:onClick="onRadioButtonClicked"
+                android:textSize="12sp"/>
+            <RadioButton
+                android:id="@+id/q10a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B. continue cooling it until it reaches 41°F (5°C) within 4 hours."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q10a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C. cover it with plastic wrap and a label, then place under refrigeration."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                android:id="@+id/q10a4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D. place it on the counter in a properly covered food-safe container."
+                android:textSize="12sp"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="4dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+        <TextView
+            android:id="@+id/final_score_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#455A64"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="14sp"/>
+
+
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Exam"
+            android:background="#455A64"
+            android:textColor="#FFFFFF"
+            android:onClick="submitButtonClicked"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

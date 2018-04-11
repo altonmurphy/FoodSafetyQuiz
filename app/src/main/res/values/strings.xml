@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Food Safety Quiz</string>
+    <string name="instructions">Welcome to your State Food Safety Certification Exam. Please select one answer for each question.
+If you have finished your exam and there is extra time you, please review all items and go back to answer any
+        questions that you may have skipped before submitting your completed exam. Submit your exam by pressing the "SUBMIT EXAM" button at the end of the exam.</string>
+    <string name="one">1. </string>
+    <string name="question_one">1. An operation must have a HACCP plan in place to serve which menu item?</string>
+    <string name="question_two">2. Operations serving raw oysters should have a</string>
+    <string name="question_three">3. Which risk may result from having a cross-connection?</string>
+    <string name="question_four">4. Which minimum internal cooking temperature must prime rib reach for 15 seconds?</string>
+    <string name="question_five">5.	Cold ready-to-eat TCS food prepped in-house must be date marked if it will be held for longer than how many hours?</string>
+    <string name="question_six">6. Which is the highest air temperature at which shell eggs can be received?</string>
+    <string name="question_seven">7. Foodborne pathogens grow best in foods with a water activity within which range?</string>
+    <string name="question_eight">8. When would a manager have to submit a HACCP plan to the regulatory authority?</string>
+    <string name="question_nine">9.	When cooking raw foods in a microwave, food must be</string>
+    <string name="question_ten">10.	If a previously cooked food has been cooling for 2 hours and the internal temperature is 70°F (21°C), the next step is to</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
